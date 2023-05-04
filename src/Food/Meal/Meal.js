@@ -8,6 +8,7 @@ const Meal = (props) => {
         className="h-auto max-w-lg transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0" 
         src={strMealThumb}
       ></img> */}
+
       <img
         className="h-sm max-w-sm transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
         src={strMealThumb}

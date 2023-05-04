@@ -7,6 +7,7 @@ import FriendDetail from "./FriendDetail/FriendDetail";
 import Countries from "./Countries/Countrys/Countries";
 import Country from "./Countries/Country/Country";
 import Meals from "./Food/Meals/Meals";
+import MealDetail from "./Food/MealDetail/MealDetail";
 
 function App() {
   return (
@@ -15,9 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Header></Header>}></Route>
         <Route path="/friends" element={<Friends></Friends>}></Route>
-        <Route path="/meal" element={<Meals></Meals>}>
-          {" "}
-        </Route>
+        <Route path="/meal" element={<Meals></Meals>}></Route>
+        <Route path="/meal/:idMeal" element={<MealDetail></MealDetail>}></Route>
         <Route
           path="/friends/:friendId"
           element={<FriendDetail></FriendDetail>}

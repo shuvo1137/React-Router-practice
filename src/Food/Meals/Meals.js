@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Meal from "../Meal/Meal";
+import { Link } from "react-router-dom";
 
 const Meals = () => {
   const [mealText, setMealText] = useState("");
@@ -20,7 +21,12 @@ const Meals = () => {
       <h3>{meal?.length}</h3>
       <div className="grid grid-cols-2 gap-2">
         {meal.map((singleMeal) => {
-          return <Meal meal={singleMeal}></Meal>;
+          console.log(singleMeal);
+          return (
+            <Link to={`/meal/${singleMeal.idMeal}`}>
+              <Meal meal={singleMeal}></Meal>
+            </Link>
+          );
         })}
       </div>
     </div>
